@@ -16,11 +16,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = 'mon-ext',
+    name = 'my-panel',
     version = '0.0.1',
-    description = 'sample monitoring extensions for OpenStack Dashboard',
-    author = 'David Lyle',
-    author_email = 'dklyle0@gmail.com',
+    description = 'sample panel extension for OpenStack Dashboard',
+    author = 'Thai Tran',
+    author_email = 'tqtran@us.ibm.com',
     classifiers = [
         'Environment :: OpenStack',
         'Framework :: Django',

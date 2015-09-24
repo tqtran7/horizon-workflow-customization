@@ -1,0 +1,33 @@
+
+<div ng-controller="horizon.dashboard.identity.users.steps.blueStepController">
+  <h1 translate>Blue Plugin</h1>
+  <div class="content">
+    <div class="subtitle" translate>My custom step</div>
+    <div translate style="margin-bottom:1em;">
+      Place your custom content here!
+      Refer to angular forms and validations for more complex interactions.
+      You can additional hook onto wizard and users events before the submitting.
+      Refer to blue-step.controller.js for examples.
+    </div>
+    <div class="selected-source clearfix">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <div class="form-group required">
+            <label class="control-label" translate>Favor color</label>
+            <input type="text" class="form-control"
+              placeholder="{$ 'Enter your favorite color'|translate $}">
+          </div>
+        </div>
+      </div><!-- row -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <div class="form-group required">
+            <label class="control-label" translate>Favor Food</label>
+            <input type="text" class="form-control"
+              placeholder="{$ 'Enter your favorite food'|translate $}">
+          </div>
+        </div>
+      </div><!-- row -->
+    </div><!-- clearfix -->
+  </div><!-- content -->
+</div><!-- controller -->

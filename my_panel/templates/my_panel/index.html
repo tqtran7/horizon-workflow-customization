@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "My Panel" %}{% endblock %}
+
+{% block page_header %}
+  <hz-page-header
+    header="'My Panel' | translate"
+    description="'My own custom panel!' | translate">
+  </hz-page-header>
+{% endblock page_header %}
+
+{% block main %}
+  <ng-include src="'{{ STATIC_URL }}dashboard/admin/my-panel/my-panel.html'"></ng-include>
+{% endblock %}

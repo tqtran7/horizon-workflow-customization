@@ -11,16 +11,11 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from horizon import tables
+from django.conf import urls
 
-from mon_panel import tables as mon_tables
-from mon_panel.data import services as mock_services
+from my_panel import views
 
-
-class IndexView(tables.DataTableView):
-    table_class = mon_tables.ServiceTable
-    template_name = 'mon_panel/index.html'
-
-    def get_data(self):
-        services = mock_services.get_mock_data()
-        return services
+urlpatterns = urls.patterns(
+    '',
+    urls.url(r'^$', views.IndexView.as_view(), name='index'),
+)

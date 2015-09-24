@@ -11,11 +11,8 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from horizon import tabs
-
-from log_panel import tabs as log_tabs
+from django.views import generic
 
 
-class IndexView(tabs.TabView):
-    tab_group_class = log_tabs.LogTabs
-    template_name = 'log_panel/index.html'
+class IndexView(generic.TemplateView):
+    template_name = 'my_panel/index.html'
