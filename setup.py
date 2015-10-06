@@ -16,9 +16,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = 'my-panel',
+    name = 'my_workflow',
     version = '0.0.1',
-    description = 'sample panel extension for OpenStack Dashboard',
+    description = 'sample workflow extension for OpenStack Dashboard',
     author = 'Thai Tran',
     author_email = 'tqtran@us.ibm.com',
     classifiers = [

@@ -11,8 +11,11 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from django.views import generic
+from django.utils.translation import ugettext_lazy as _
+
+import horizon
 
 
-class IndexView(generic.TemplateView):
-    template_name = 'my_panel/index.html'
+class MyPanel(horizon.Panel):
+    name = _("My Panel")
+    slug = "my_panel"
